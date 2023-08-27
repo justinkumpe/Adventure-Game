@@ -104,7 +104,7 @@ def house(params):
     # Things that happen to the player in the house
     print_pause(f"You approach the door of the {params['building']}.")
     print_pause(f"You are about to knock when the door opens and out steps " +
-                "a {params['boss']}.")
+                f"a {params['boss']}.")
     print_pause(f"Eep! This is the {params['boss']}'s {params['building']}!")
     print_pause(f"The {params['boss']} attacks you!")
     print_pause("You feel a bit under-prepared for this, what with only " +
