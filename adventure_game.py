@@ -15,7 +15,8 @@ def playgame():
         'monster',
         'wizard',
         'witch',
-        'gorgon'
+        'gorgon',
+        'Waylon'
         ]
     building = [
         'house',
@@ -65,6 +66,8 @@ def fight(params):
         print_pause("You do your best...")
         print_pause(f"but your dagger is no match for the {params['boss']}.")
         print_pause("You have been defeated!")
+        if params['boss'] == 'Waylon':
+            print_pause('And the Waylon squeaked you to death!!!')
         replay()
 
 
